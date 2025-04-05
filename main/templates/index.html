@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПромТехСинергия - Упаковочное Оборудование для Агробизнеса</title>
+    <link rel="stylesheet" href={% static 'css/style.css'%}> <!--  CSS файл -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src={% static 'images/logo.svg' %} alt="Логотип ПромТехСинергия"> <!--  путь r логотипу -->
+                    ПромТехСинергия
+                </a>
+                <ul class="menu">
+                    <button class="menu-close-button">&times;</button>
+                    <li><a href="#equipment">Оборудование</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <button class="burger-menu">&#9776;</button> <!-- Иконка бургера для мобильного меню -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <img class="hero-image hidden" src={% static 'images/14.jpg' %} alt="Современное упаковочное оборудование">
+            <div class="hero-content hidden">
+                <h1><span class="red-text">Инновационные решения</span> для упаковки вашего урожая</h1>
+                <p>Повысьте эффективность и снизьте затраты с современным упаковочным оборудованием от "ПромТехСинергия".</p>
+                <a href="#equipment"><button class="button primary-button">Смотреть оборудование</button></a> 
+            </div>
+        </section>
+        
+        <section id="equipment" class="equipment hidden-equipment">
+            <div class="container">
+                <h2>Наше <span class="red-text">упаковочное оборудование</span></h2>
+                <p class="section-description">Представляем широкий ассортимент автоматизированных решений для упаковки сельскохозяйственной продукции.  Откройте для себя оборудование, которое поднимет ваш бизнес на новый уровень.</p>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src={% static 'images/img_1.png' %} alt="Упаковочная машина 1">
+                            <h3>Автоматическая упаковочная машина для овощей и фруктов</h3>
+                            <p>Высокоскоростная упаковка свежих продуктов с сохранением качества и привлекательным видом.</p>
+                            <a href="#" class="button secondary-button">Подробнее</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={% static 'images/img_2.png'%} alt="Упаковочная машина 2">
+                            <h3>Роботизированная линия упаковки в гофрокороб</h3>
+                            <p>Полностью автоматизированная линия для упаковки продукции в гофротару. Максимальная эффективность и точность.</p>
+                            <a href="#" class="button secondary-button">Подробнее</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={% static 'images/img_3.png'%} alt="Упаковочная машина 3">
+                            <h3>Термоусадочная упаковочная машина для групповой упаковки</h3>
+                            <p>Надежная и экономичная упаковка продукции в термоусадочную пленку для транспортировки и хранения.</p>
+                            <a href="#" class="button secondary-button">Подробнее</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={% static 'images/img_4.png'%} alt="Упаковочная машина 4">
+                            <h3>Автоматизированный упаковщик в полиэтиленовые пакеты</h3>
+                            <p>Экономичная автоматическая упаковка в термоусадочную пленку гарантирует сохранность продукции при транспортировке и хранении.</p>
+                            <a href="#" class="button secondary-button">Подробнее</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src={% static 'images/img_5.png'%} alt="Упаковочная машина 5">
+                            <h3>Автоматическая машина для зашивания мешков</h3>
+                            <p>Надежный и простой в управлении автоматический зашиватель мешков сочетает в себе надежность, простоту и гибкость для любой производственной линии.
+                            </p>
+                            <a href="#" class="button secondary-button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <div class="container">
+                <h2 class="hidden-about">О компании <span class="red-text"> "ПромТехСинергия"</span></h2>
+                <div class="about-container">
+                    <p class="about-p_left hidden-about">ООО "ПромТехСинергия" — это компания, которая предлагает высокотехнологичные решения для автоматизации сельского хозяйства. Мы специализируемся на поставках роботизированной техники, включая упаковочное оборудование и руки-манипуляторы, которые помогают сельхозпредприятиям повысить производительность и снизить затраты.</p>
+                    <div class="container-line">
+                        <svg viewBox="0 0 200 600">
+                        <path id="line" d="M 100 50 C 150 50, 150 150, 100 150 C 50 150, 50 250, 100 250 C 150 250, 150 350, 100 350 C 50 350, 50 450, 100 450 "
+                                stroke-width="10" fill="none" />
+                            <linearGradient id="gradient" x1="0%" y1="20%" x2="80%" y2="100%">
+                            <stop offset="0%"   style="stop-color:rgb(128,0,0);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                            </linearGradient>
+                        </svg>
+                    </div>
+                    <div class="about-p_right hidden-about">
+                        <p>Основатель компании, Душина Наталья, более 5 лет работает в сфере автоматизации сельского хозяйства. Eё опыт и глубокое понимание потребностей отрасли позволяют нам предлагать клиентам только проверенные и эффективные решения.</p>
+                        <p>Мы тщательно отбираем оборудование, ориентируясь на его надежность, функциональность и соответствие современным стандартам. Наша цель — сделать передовые технологии доступными для сельхозпроизводителей России.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="button primary-button about-button hidden-about">Узнать больше о компании</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact hidden-form">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <p>Готовы обсудить ваши потребности в упаковочном оборудовании?  Оставьте заявку, и наши специалисты свяжутся с вами в ближайшее время.</p>
+                <div class="login-container">
+                    <form class="login-form">
+                        <div class="form-group">
+                            <input type="text" id="text" name="email" placeholder=" " required>
+                            <label for="text">Ваше имя</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Ваш email</label>
+                        </div>
+                        <textarea placeholder="Сообщение" required></textarea>
+                        <button type="submit" class="button primary-button">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <img src={% static 'images/logo.svg'%} alt="Логотип ПромТехСинергия (футер)">ПромТехСинергия
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i>  Адрес: [Ваш адрес]</p>
+                    <p><i class="fas fa-phone"></i>  Телефон: [Ваш телефон]</p>
+                    <p><i class="fas fa-envelope"></i>  Email: <a href="mailto:info@promtehsynergia.ru"> info@promtehsynergia.ru</a></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-vk"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                                <p>© 2024 ООО "ПромТехСинергия". Все права защищены.</p>
+                <ul class="footer-links">
+                    <li><p><a href="#">Политика конфиденциальности</a></p></li>
+                    <li><p><a href="#">Условия использования</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src={% static 'script/script.js' %}></script>
+    <script src={% static 'script/script-hero.js'%} ></script>
+    <script src={% static 'script/script-equipment.js'%}></script>
+    <script src={% static 'script/script-about.js'%}></script>
+    <script src={% static 'script/script-form.js'%}></script>
+</body>
+</html>
